@@ -9,7 +9,7 @@ Please fork this repository don't import code
 Made with Python3
 (C) @subinps
 Copyright permission under MIT License
-License -> https://github.com/aniket-yt/musicbot_xd/LICENSE
+License -> https://github.com/aniket-yt/musicbot_xd/blob/main/LICENSE
 
 ```
 
