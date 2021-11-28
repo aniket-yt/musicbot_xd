@@ -1,6 +1,6 @@
 #MIT License
 
-#Copyright (c) 2021 SUBIN
+#Copyright (c) 2021 @Anikethacker
 
 #Permission is hereby granted, free of charge, to any person obtaining a copy
 #of this software and associated documentation files (the "Software"), to deal
@@ -221,7 +221,7 @@ async def yplay(_, message: Message):
         try:
             thumb = info["thumbnail"]
         except:
-            thumb="https://telegra.ph/file/181242eab5c4a74916d01.jpg"
+            thumb="https://telegra.ph/file/9f1ed14565641cf90c55e.jpg"
             pass
         if int(duration) > DURATION_LIMIT:
             k=await message.reply_text(f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed, the provided video is {duration} minute(s)")
@@ -343,7 +343,7 @@ async def deezer(_, message):
                 try:
                     thumb=song.get("image")
                 except:
-                    thumb="https://telegra.ph/file/181242eab5c4a74916d01.jpg"
+                    thumb="https://telegra.ph/file/9f1ed14565641cf90c55e.jpg"
                     pass
                 GET_THUMB[url] = thumb
                 now = datetime.now()
@@ -430,7 +430,7 @@ async def deezer(_, message):
             try:
                 thumb=a.get("image")
             except:
-                thumb="https://telegra.ph/file/181242eab5c4a74916d01.jpg"
+                thumb="https://telegra.ph/file/9f1ed14565641cf90c55e.jpg"
                 pass
             GET_THUMB[url] = thumb
         except:
@@ -1024,10 +1024,10 @@ async def yt_play_list(client, m: Message):
                 markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📢 Join My Update Channel", url='https://t.me/subin_works')
+                            InlineKeyboardButton("📢 Join My Update Channel", url='https://t.me/anekhacks')
                         ],
                         [
-                            InlineKeyboardButton("🔄 Try Again", url=f"https://telegram.me/GetPlaylistBot?start=subinps_{m.from_user.id}")
+                            InlineKeyboardButton("🔄 Try Again", url=f"https://telegram.me/GetPlagfylistBot?start=subinps_{m.from_user.id}")
 
                         ]
                     ]
@@ -1036,11 +1036,11 @@ async def yt_play_list(client, m: Message):
                 await mp.delete(k)
                 return
             elif ytplaylist == "kicked":
-                k=await m.reply("You are banned to use this feature.\nTry @GetPlayListBot")
+                k=await m.reply("You are banned to use this feature.\nTry ")
                 await mp.delete(k)
                 return
             elif ytplaylist == "urlinvalid":
-                k=await m.reply("The Url you gave is Invalid, It should be something like <code>https://youtube.com/playlist?list=PL_rXc1ssylNebemAQVgDaOPijBaXU2gyD</code>")
+                k=await m.reply("The Url you gave is Invalid, It should be something like <code>https://www.youtube.com/channel/UCRyzrYaK0aBKHDlyGycthCQ</code>")
                 await mp.delete(k)
                 return
             elif ytplaylist == "timeout":
@@ -1319,13 +1319,13 @@ allcmd = ["play", "player", "splay", f"splay@{U}", f"play@{U}", f"player@{U}"] +
 async def not_chat(_, m: Message):
     buttons = [
         [
-            InlineKeyboardButton('⚡️Make Own Bot', url='https://heroku.com/deploy?template=https://github.com/subinps/MusicPlayer'),
-            InlineKeyboardButton('🧩 Source Code', url='https://github.com/subinps/MusicPlayer'),
+            InlineKeyboardButton('⚡️Make Own Bot', url='https://heroku.com/deploy?template=https://github.com/aniket-yt/musicbot_xd'),
+            InlineKeyboardButton('🧩 Source Code', url='https://github.com/aniket-yt/musicbot_xd'),
         ],
         [
-            InlineKeyboardButton('How to Make', url='https://youtu.be/iBK-5pP2eHM'),
+           
             InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help')       
         ]
         ]
-    k=await m.reply("<b>You can't use this bot in this group, for that you have to make your own bot from the [SOURCE CODE](https://github.com/subinps/MusicPlayer) below.</b>", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+    k=await m.reply("<b>You can't use this bot in this group, for that you have to make your own bot from the [SOURCE CODE](https://github.com/aniket-yt/musicbot_xd) below.</b>", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
     await mp.delete(m)

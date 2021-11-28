@@ -1,6 +1,6 @@
 #MIT License
 
-#Copyright (c) 2021 SUBIN
+#Copyright (c) 2021 Anikethacker
 
 #Permission is hereby granted, free of charge, to any person obtaining a copy
 #of this software and associated documentation files (the "Software"), to deal
@@ -224,8 +224,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-                InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/MusicPlayer'),
+                InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/anikethacker'),
+                InlineKeyboardButton('🧩 Source', url='https://github.com/aniket-yt/musicbot_xd'),
             ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
